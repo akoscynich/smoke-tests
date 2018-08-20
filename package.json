@@ -1,0 +1,17 @@
+{
+  "name": "codecept",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "appium": "appium",
+    "codeceptjs": "codeceptjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "appium": "^1.8.1",
+    "codeceptjs": "^1.3.2",
+    "selenium-standalone": "^6.15.1"
+  }
+}

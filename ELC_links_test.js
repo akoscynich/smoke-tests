@@ -1,0 +1,40 @@
+
+Feature('ELC', {retries: 3});
+
+Scenario('test links', (I) => {
+  I.amOnPage('https://www.elc-russia.ru/');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="page"]/div/a');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Бренды');
+  I.see('Вступить в клуб');
+  I.see('Задать вопрос');
+  I.see('Войти');
+  I.see('Регистрация');
+  I.see('Новинки');
+  I.see('Магазины');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu"]/div[2]/a[3]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="titleOpenReview"]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[1]/a');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Доставка осуществляется по территории России.');
+  I.click('//*[@id="titleOpenReview"]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[2]/a');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Возврат товара в интернет-магазин Elc-russia.ru');
+  I.click('//*[@id="titleOpenReview"]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[3]/a');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Публичная оферта');
+  I.click('//*[@id="titleOpenReview"]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[5]/a');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Карта сайта');
+  I.click('//*[@id="titleOpenReview"]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[6]/a');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Зайти через учетную запись OpenID');
+//  I.click('//*[@id="titleOpenReview"]');
+  //I.wait(1);
+//  I.click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[7]/a');
+//  I.wait(3);
+//  I.see('Обработка персональных данных');
+//  I.click('//*[@id="titleOpenReview"]');
+//  I.wait(1);
+//  I.click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[8]/a');
+//  I.wait(3);
+//  I.see('Официальное уведомление');
+});

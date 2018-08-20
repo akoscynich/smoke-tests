@@ -4,7 +4,7 @@
   "output": "./output",
   "helpers": {
     "Appium": {
-      "platform": "IOS",
+      "platform": "Android",
       "desiredCapabilities": {
         "platformName": "iOS",
         "platformVersion": "11.4",

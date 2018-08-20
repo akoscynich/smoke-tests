@@ -6,10 +6,9 @@
     "Appium": {
       "platform": "Android",
       "desiredCapabilities": {
-        "platformName": "iOS",
-        "platformVersion": "11.4",
-        "deviceName": "iPhone Simulator",
-        "browserName": "Safari"
+        "platformName": "Android",
+        "deviceName": "Android Emulator",
+        "browserName": "Chrome"
       }
     }
   },

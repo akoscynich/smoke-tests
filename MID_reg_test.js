@@ -1,12 +1,15 @@
 
-Feature('MID', {retries: 3});
+Feature('MID', {retries: 2});
 
 Scenario('test registration', (I) => {
   I.amOnPage('https://mideastore.ru');
+  //pause();
+  //I.wait(30);
   I.retry({ retries: 10, minTimeout: 1000 }).see('Войти');
   I.retry({ retries: 10, minTimeout: 1000 }).click('div.top-right.mobile-center > div > div > div > ul > li:nth-child(2) > a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Создать новую учётную запись клиента');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div/div[1]/button');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='password-confirmation']", "feq0ZYIc");
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div/div[1]');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Это поле обязательно для заполнения.');
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='email_address']", "tolik_kosmal.ru");
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='password']", "feq0ZYIc");
@@ -20,7 +23,10 @@ Scenario('test registration', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).see('Учётная запись с таким адресом электронной почты уже существует.');
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='password']", "feq");
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='password-confirmation']", "feq0ZYIc");
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div/div[1]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Минимальная длина этого поля');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Please enter the same value again.');
+  //pause();
+
+  //I.wait(10);
+  /*
+*/
 });

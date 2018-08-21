@@ -1,5 +1,5 @@
 
-Feature('ST', {retries: 2});
+Feature('ST', {retries: 1});
 
 Scenario('test links', (I) => {
   I.amOnPage('https://freshub.ru');

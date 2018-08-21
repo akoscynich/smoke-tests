@@ -1,5 +1,5 @@
 
-Feature('ELC', {retries: 2});
+Feature('ELC', {retries: 1});
 
 Scenario('test search', (I) => {
   I.amOnPage('https://www.elc-russia.ru/');

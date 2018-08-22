@@ -34,3 +34,5 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).click('a[href="/disclamer"]');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Официальное уведомление');
 });
+//"newCommandTimeout": 30
+//

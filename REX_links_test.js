@@ -1,5 +1,5 @@
 
-Feature('REX', /*{retries: 2}*/);
+Feature('REX', {retries: 1});
 
 Scenario('test links', (I) => {
   I.amOnPage('https://elektroskandia.ru');
@@ -10,7 +10,7 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).see('Компания ООО «Электроскандия Рус» предлагает Вам');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="tm"]/ul/li[3]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('ООО «Электроскандия Рус» придает особое значение');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="tm"]/ul/li[4]/a');
+  //I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="tm"]/ul/li[4]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="tm"]/ul/li[5]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('ГОЛОВНОЙ ОФИС в г. Санкт-Петербруге');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="tm"]/ul/li[6]/a');
@@ -24,7 +24,7 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).see('Компания ООО «Электроскандия Рус» предлагает Вам');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="bm"]/ul/li[3]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('ООО «Электроскандия Рус» придает особое значение');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="bm"]/ul/li[4]/a');
+  //I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="bm"]/ul/li[4]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="bm"]/ul/li[5]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('ГОЛОВНОЙ ОФИС в г. Санкт-Петербруге');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="bm"]/ul/li[6]/a');

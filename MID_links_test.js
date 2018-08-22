@@ -1,5 +1,5 @@
 
-Feature('MID'/*, {retries: 1}*/);
+Feature('MID', {retries: 1});
 
 Scenario('test links', (I) => {
   I.amOnPage('https://mideastore.ru');
@@ -41,5 +41,5 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).see('Поиск сервисного центра');
   I.click('//*[@id="cms-static-main-footer"]/div[3]/div/span');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="cms-static-main-footer"]/div[3]/div/div/ul/li[4]/a');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Бесплатная доставка по всей России');
+  //I.retry({ retries: 10, minTimeout: 1000 }).see('Бесплатная доставка по всей России');
 });

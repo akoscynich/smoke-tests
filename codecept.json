@@ -8,8 +8,7 @@
       "desiredCapabilities": {
         "platformName": "Android",
         "deviceName": "Android Emulator",
-        "browserName": "Chrome",
-        "newCommandTimeout": 300
+        "browserName": "Chrome"
       }
     }
   },

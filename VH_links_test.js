@@ -1,5 +1,5 @@
 
-Feature('VH', /*{retries: 2}*/);
+Feature('VH', {retries: 2});
 
 Scenario('test links', (I) => {
   I.amOnPage('https://visagehall.ru');

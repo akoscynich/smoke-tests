@@ -6,7 +6,9 @@ Scenario('test registration', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).see('Войти');
   I.retry({ retries: 10, minTimeout: 1000 }).click('div.top-right.mobile-center > div > div > div > ul > li:nth-child(2) > a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Создать новую учётную запись клиента');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="newsletter"]', "1");
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div/div[1]/button');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="newsletter"]', "1");
   I.retry({ retries: 10, minTimeout: 1000 }).see('Это поле обязательно для заполнения.');
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='email_address']", "tolik_kosmal.ru");
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='password']", "feq0ZYIc");

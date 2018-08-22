@@ -3,7 +3,8 @@ Feature('ELC', /*{retries: 2}*/);
 
 Scenario('test registration', (I) => {
   I.amOnPage('https://www.elc-russia.ru/');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[1]/div[2]/a[2]/i');
+  //pause();
+  I.retry({ retries: 10, minTimeout: 1000 }).click('#mm-0 > div.header-top > div.header-top__line > a.account');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="modal_auth"]/div/div[2]/div[3]/div/div/button');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-register"]/div[5]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Это поле обязательно для заполнения');

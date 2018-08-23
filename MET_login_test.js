@@ -1,7 +1,7 @@
 
 Feature('MET', /*{retries: 2}*/);
 
-Scenario('test links', (I) => {
+Scenario('test login', (I) => {
   I.amOnPage('https://metpromko.ru/');
   I.click('//*[@id="cities-popup"]/div/div/span');
 

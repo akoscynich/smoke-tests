@@ -3,7 +3,7 @@ Feature('MET', /*{retries: 2}*/);
 
 Scenario('test registration', (I) => {
   I.amOnPage('https://metpromko.ru/');
-  I.click('//*[@id="cities-popup"]/div/div/span');
+  /*I.click('//*[@id="cities-popup"]/div/div/span');
 
   I.amOnPage('https://metpromko.ru/customer/account/login/');
   I.see('СТРАНИЦА АВТОРИЗАЦИИ');
@@ -17,5 +17,5 @@ Scenario('test registration', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="youama-firstname"]','111');
   I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="youama-lastname"]','111');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="header-account"]/div[2]/div/div/div[4]/div/button');
-
+*/
   });

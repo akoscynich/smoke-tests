@@ -16,9 +16,11 @@ Scenario('test registration', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='firstname']", "Test");
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='lastname']", "Account");
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='password-confirmation']", "feq0ZYIc");
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="newsletter"]', "1");
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div/div[1]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста, введите правильный адрес электронной почты (Пример: johndoe@domain.com).');
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='email_address']", "tolik_kos@mail.ru");
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="newsletter"]', "1");
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div/div[1]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Учётная запись с таким адресом электронной почты уже существует.');
   I.retry({ retries: 10, minTimeout: 1000 }).fillField("//*[@id='password']", "feq");

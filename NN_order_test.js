@@ -1,8 +1,8 @@
 
 Feature('NN', /*{retries: 2}*/);
 
-Scenario('test order', (I) => {
-  I.amOnPage('https://www.nespresso.com/ru/ru/');
+Scenario('test order DISABLED', (I) => {
+  /*I.amOnPage('https://www.nespresso.com/ru/ru/');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Кофе-капсулы');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="header-nav-mobile"]/div[1]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Всего');
@@ -26,10 +26,7 @@ Scenario('test order', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="shopping-cart-table"]/tbody/tr[3]/td[4]/input', '100')
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="shopping-cart-table"]/tbody/tr[3]/td[4]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="top"]/body/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li[2]/button');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="top"]/body/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li[2]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Я НОВЫЙ КЛИЕНТ');
-  /*I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="login-email"]', 'tolik_kos@mail.ru')
-  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="login-password"]', 'acid1985')
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="checkout-step-login"]/div/div[2]/div/button');
-
 */
 });

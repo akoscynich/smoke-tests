@@ -48,6 +48,7 @@ Scenario('test links', (I) => {
           I.retry({ retries: 5, minTimeout: 1000 }).see('Возврат товара в интернет-магазин Elc-russia.ru');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/terms"]');
           I.retry({ retries: 5, minTimeout: 1000 }).see('Публичная оферта');
+          I.amOnPage('https://www.elc-russia.ru/');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/catalog/seo_sitemap/category/"]');
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>Интернет-магазин развивающих игрушек<');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/privacy-policy"]');

@@ -1,5 +1,5 @@
 
-Feature('MID'/*, {retries: 1}*/);
+Feature('MID', {retries: 1});
 
 Scenario('test order', (I) => {
   I.amOnPage('https://mideastore.ru');

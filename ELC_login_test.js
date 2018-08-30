@@ -1,11 +1,21 @@
 
-Feature('ELC', {retries: 3});
+Feature('ELC', {retries: 1});
 
 Scenario('test login', (I) => {
-  I.amOnPage('https://www.elc-russia.ru/');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[1]/div[2]/a[2]/i');
-  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYIc');
-  I.retry({ retries: 5, minTimeout: 1000 }).click('//*[@id="modal_auth"]/div/div[2]/div[2]/div/form/div[4]/div[1]/button');
-  I.retry({ retries: 5, minTimeout: 1000 }).see('Мой аккаунт');
+  I.amOnPage('https://www.elc-russia.ru/customer/account/login/');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Это поле обязательно для заполнения.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kosmail.ru');
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0Z');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Пожалуйста, введите правильный адрес электронной почты. Например johndoe@domain.com.');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Please enter 6 or more characters without leading or trailing spaces.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYI');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Неправильный логин или пароль.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYIc');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Мой аккаунт');
 });

@@ -8,7 +8,9 @@
       "desiredCapabilities": {
         "platformName": "Android",
         "deviceName": "Android Emulator",
-        "browserName": "Chrome"
+        "app": "/Users/hamster/Downloads/HipChat-0.apk",
+        "appActivity": ".activities.SignedOutActivity_",
+        "appPackage": "com.hipchat"
       }
     }
   },

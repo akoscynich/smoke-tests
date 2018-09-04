@@ -10,7 +10,8 @@
         "deviceName": "Android Emulator",
         "app": "/Users/hamster/Downloads/HipChat-0.apk",
         "appActivity": ".activities.SignedOutActivity_",
-        "appPackage": "com.hipchat"
+        "appPackage": "com.hipchat",
+        "automationName": "Appium"
       }
     }
   },

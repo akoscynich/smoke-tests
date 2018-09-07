@@ -1,8 +1,15 @@
-const Mocha = require('mocha');
+/*const Mocha = require('mocha');
 
 var mocha = new Mocha({
-  reporter: 'mochawesome'
-});
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportFilename: 'customReportFilename',
+    html: true,
+    overwrite: true,
+    reportTitle: 'My Custom Title',
+    showPassed: true
+  }
+});*/
 
 Feature('NN', /*{retries: 2}*/);
 

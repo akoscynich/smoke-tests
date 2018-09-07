@@ -58,6 +58,9 @@ const desiredCapConstraints = {
   safariOpenLinksInBackground: {
     isBoolean: true
   },
+  safariGarbageCollect: {
+    isBoolean: true
+  },
   keepKeyChains: {
     isBoolean: true
   },
@@ -98,6 +101,9 @@ const desiredCapConstraints = {
   },
   webkitResponseTimeout: {
     isNumber: true
+  },
+  remoteDebugProxy: {
+    isString: true
   },
   enablePerformanceLogging: {
     isBoolean: true

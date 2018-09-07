@@ -10,6 +10,7 @@
 
 [![Build Status](https://team-appium.ci.cloudbees.com/job/Appium/badge/icon)](https://team-appium.ci.cloudbees.com/job/Appium/)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fappium%2Fappium.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fappium%2Fappium?ref=badge_shield)
+[![Greenkeeper badge](https://badges.greenkeeper.io/appium/appium.svg)](https://greenkeeper.io/)
 
 Appium is an open source, cross-platform test automation tool for native,
 hybrid and mobile web and desktop apps. We support simulators (iOS), emulators
@@ -78,8 +79,8 @@ Node.js 6+.
 Check out our [Getting Started](/docs/en/about-appium/getting-started.md) guide
 to get going with Appium.
 
-There is also a repository that contains [many examples of tests in a variety
-of different languages](https://github.com/appium/sample-code)!
+There is also sample code that contains [many examples of tests in a variety
+of different languages](https://github.com/appium/sample-code/tree/master/sample-code)!
 
 ### Documentation
 
@@ -109,11 +110,11 @@ Group](https://discuss.appium.io), be sure to sign up!
 ### Troubleshooting
 
 We put together a [troubleshooting
-guide](/docs/en/writing-running-appium/troubleshooting.md).  Please have a look
+guide](/docs/en/writing-running-appium/other/troubleshooting.md).  Please have a look
 here first if you run into any problems. It contains instructions for checking
 a lot of common errors and how to get in touch with the community if you're
 stumped.
 
 ### License
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fappium%2Fappium.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fappium%2Fappium?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fappium%2Fappium.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fappium%2Fappium?ref=badge_large) [![Greenkeeper badge](https://badges.greenkeeper.io/appium/appium.svg)](https://greenkeeper.io/)

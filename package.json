@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "appium": "appium",
-    "codeceptjs": "codeceptjs --reporter mochawesome --reporter-options reportFilename=customReportFilename,ts,cdn"
+    "codeceptjs": "codeceptjs --reporter mochawesome --reporter-options reportFilename=customReportFilename,ts=shortDate,cdn=true,saveJson=true"
   },
   "author": "",
   "license": "ISC",

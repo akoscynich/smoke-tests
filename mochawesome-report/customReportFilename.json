@@ -1,0 +1,141 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-09-10T14:05:13.474Z",
+    "end": "2018-09-10T14:05:33.976Z",
+    "duration": 20502,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "8a65cd4a-887b-4028-b305-d11d8fb4c7a8",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "a8442643-389b-48eb-b3ad-f0e43ae3b6b9",
+        "title": "MET",
+        "fullFile": "/Users/hamster/codecept/MET_links_test.js",
+        "file": "/MET_links_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "MET \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0d4e0abf-de31-4506-a0be-68e4fd55ee67",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "MET \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 4892,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "4f9b8c09-a9aa-4fe5-aedd-4f35586405c1",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "MET \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "d3765df2-bb46-435c-90a9-6ab6b2053875",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: finalize codeceptjs",
+            "fullTitle": "MET \"after each\" hook: finalize codeceptjs",
+            "timedOut": false,
+            "duration": 225,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "8b1ba684-aa07-4e5a-ab82-d8d551e8cec3",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "test links",
+            "fullTitle": "MET: test links",
+            "timedOut": false,
+            "duration": 15376,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "I.amOnPage('https://metpromko.ru/');\nI.click('//*[@id=\"cities-popup\"]/div/div/span');\nI.see('Оформить заказ');\nI.amOnPage('https://metpromko.ru/onepagecheckout/');\nI.see('КОРЗИНА ПУСТА');\nI.amOnPage('https://metpromko.ru/about/');\nI.see('О КОМПАНИИ');\nI.amOnPage('https://metpromko.ru/contacts/');\nI.see('Внимание! Компания Метпромко');\nI.amOnPage('https://metpromko.ru/dostavka/');\nI.see('Компания Метпромко доставляет');\nI.amOnPage('https://metpromko.ru/oplata/');\nI.seeInSource('\"std\">Оплата');\nI.amOnPage('https://metpromko.ru/uslugi/');\nI.see('Компания Метпромко является');\nI.click('//*[@id=\"menu-icon\"]');\nI.see('Металлопрокат');\nI.see('Труба');\nI.see('Лист');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "cc14dcae-e4a5-47ac-81cd-092307dfec81",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "cc14dcae-e4a5-47ac-81cd-092307dfec81"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 15376,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 0
+  },
+  "copyrightYear": 2018
+}

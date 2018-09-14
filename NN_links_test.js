@@ -1,16 +1,3 @@
-/*const Mocha = require('mocha');
-
-var mocha = new Mocha({
-  reporter: 'mochawesome',
-  reporterOptions: {
-    reportFilename: 'customReportFilename',
-    html: true,
-    overwrite: true,
-    reportTitle: 'My Custom Title',
-    showPassed: true
-  }
-});*/
-
 Feature('NN', /*{retries: 2}*/);
 
 Scenario('test links DISABLED', (I) => {

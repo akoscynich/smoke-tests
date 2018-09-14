@@ -24,3 +24,30 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="top-menu"]/div[1]/div[3]/a/i');
   I.retry({ retries: 10, minTimeout: 1000 }).see('ОЧИСТИТЬ ВСЮ ТАБЛИЦУ');
 });
+
+Scenario('screenshots', (I) => {
+I.amOnPage('https://ru.wileyfox.com/');
+I.saveScreenshot('WF_main.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_main.png');
+I.amOnPage('https://ru.wileyfox.com/smartphones/');
+I.saveScreenshot('WF_smartphones.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_smartphones.png');
+I.amOnPage('https://ru.wileyfox.com/support/');
+I.saveScreenshot('WF_support.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_support.png');
+I.amOnPage('https://ru.wileyfox.com/about-us/');
+I.saveScreenshot('WF_about.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_about.png');
+I.amOnPage('https://ru.wileyfox.com/compare/');
+I.saveScreenshot('WF_compare.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_compare.png');
+I.amOnPage('https://ru.wileyfox.com/service-and-warranty/');
+I.saveScreenshot('WF_service.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_service.png');
+I.amOnPage('https://ru.wileyfox.com/about-us/contacts/');
+I.saveScreenshot('WF_contacts.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_contacts.png');
+I.amOnPage('https://ru.wileyfox.com/products/swift/');
+I.saveScreenshot('WF_catalog.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_catalog.png');
+});

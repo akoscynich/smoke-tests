@@ -1,7 +1,7 @@
 {
   "tests": "./*_test.js",
   "timeout": 10000,
-  "output": "./output",
+  "output": "./mochawesome-report",
   "helpers": {
     "Appium": {
       "platform": "IOS",
@@ -11,7 +11,8 @@
         "deviceName": "iPhone Simulator",
         "browserName": "Safari"
       }
-    }
+    },
+    "Mochawesome": {}
   },
   "include": {
     "I": "./steps_file.js"

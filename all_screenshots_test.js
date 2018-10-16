@@ -1,7 +1,7 @@
 
 Feature('ALL', /*{retries: 2}*/);
 
-Scenario('screenshots', (I) => {
+Scenario('screenshots NOT WORKS', (I) => {
   //MET
   I.amOnPage('https://metpromko.ru/');
   /*pause();

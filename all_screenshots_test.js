@@ -4,8 +4,8 @@ Feature('ALL', /*{retries: 2}*/);
 Scenario('screenshots NOT WORKS', (I) => {
   //MET
   I.amOnPage('https://metpromko.ru/');
-  /*pause();
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="cities-popup"]/div/div/span');
+
+  //I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="cities-popup"]/div/div/span');
   I.wait(1);
   I.saveScreenshot('MET_main.png');
   /*I.amOnPage('https://metpromko.ru/checkout/cart/');

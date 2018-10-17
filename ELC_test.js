@@ -1,6 +1,6 @@
 
 
-Feature('ELC', {retries: 3});
+Feature('ELC', /*{retries: 3}*/);
 
 Scenario('test links', (I) => {
   I.amOnPage('https://www.elc-russia.ru/');
@@ -14,19 +14,26 @@ Scenario('test links', (I) => {
   I.see('Магазины');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu"]/div[2]/a[3]');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="titleOpenReview"]');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[1]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Доставка осуществляется по территории России.');
-  I.click('//*[@id="titleOpenReview"]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="titleOpenReview"]');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[2]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Возврат товара в интернет-магазин Elc-russia.ru');
-  I.click('//*[@id="titleOpenReview"]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="titleOpenReview"]');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[3]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Публичная оферта');
-  I.click('//*[@id="titleOpenReview"]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="titleOpenReview"]');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[5]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Карта сайта');
-  I.click('//*[@id="titleOpenReview"]');
+  I.wait(1);
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="titleOpenReview"]');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[6]/a');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).see('Зайти через учетную запись OpenID');
 });
 
@@ -51,7 +58,9 @@ Scenario('test login', (I) => {
 
 Scenario('test registration', (I) => {
   I.amOnPage('https://www.elc-russia.ru/');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[1]/div[2]/a[2]/i');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="modal_auth"]/div/div[2]/div[3]/div/div/button');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-register"]/div[5]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Это поле обязательно для заполнения');

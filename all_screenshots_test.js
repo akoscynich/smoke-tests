@@ -3,7 +3,7 @@ Feature('ALL', /*{retries: 2}*/);
 
 Scenario('screenshots NOT WORKS', (I) => {
   //MET
-  I.amOnPage('https://metpromko.ru/');
+  /*I.amOnPage('https://metpromko.ru/');
 
   //I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="cities-popup"]/div/div/span');
   I.wait(1);

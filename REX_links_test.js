@@ -30,3 +30,18 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="bm"]/ul/li[6]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Условия покупки');
 });
+
+Scenario('test registration', (I) => {
+  I.amOnPage('https://elektroskandia.ru');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="f_login"]/div[1]/a[1]');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="reg"]/div/div[2]/input[1]');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Не указаны все обязательные поля');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Неверно указан код с картинки');
+});
+
+Scenario('test search', (I) => {
+  I.amOnPage('https://elektroskandia.ru');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField("input[id='name']", "втулка");
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="f_catfilter"]/div/div[2]/a');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Товаров в категории:');
+});

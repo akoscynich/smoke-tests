@@ -67,12 +67,16 @@ Scenario('test order', (I) => {
   I.retry({ retries: 5, minTimeout: 1000 }).see('Курьер')*/
 });
 
-Scenario('test registration', (I) => {
+/*Scenario('test registration', (I) => {
   I.amOnPage('https://www.elc-russia.ru/customer/account/login/');
   //pause();
   I.wait(2);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="agreement"]');
   I.wait(2);
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Это поле обязательно для заполнения');
   I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="firstname"]', 'Test');
@@ -84,7 +88,7 @@ Scenario('test registration', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).see('Please');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста, введите');
-});
+});*/
 
 
 

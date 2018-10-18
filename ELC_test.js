@@ -2,7 +2,7 @@
 
 Feature('ELC', /*{retries: 3}*/);
 
-Scenario('test links', (I) => {
+/*Scenario('test links', (I) => {
   I.amOnPage('https://www.elc-russia.ru/');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="page"]/div/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Бренды');
@@ -35,7 +35,7 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="mm-0"]/div[9]/div/div[2]/ul/li[1]/div/ul/li[6]/a');
   I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).see('Зайти через учетную запись OpenID');
-});
+});*/
 
 Scenario('test login', (I) => {
   I.amOnPage('https://www.elc-russia.ru/customer/account/login/');

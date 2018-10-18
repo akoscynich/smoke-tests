@@ -38,7 +38,7 @@ Scenario('test links', (I) => {
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>Бестселлеры<');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/elcru_toy_brand/elc"]');
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>ELC<');
-          I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/world-of-adventures/constructions/lego.html"]');
+          I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/new-actions/lego.html"]');
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>Конструкторы LEGO<');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/elc-birthday-club-terms"]');
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>Правила и Условия Клуба');

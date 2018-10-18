@@ -39,7 +39,7 @@ Scenario('test links', (I) => {
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>Бестселлеры<');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/elcru_toy_brand/elc"]');
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>ELC<');
-          I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/world-of-adventures/constructions/lego.html"]');
+          I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/new-actions/lego.html"]');
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>Конструкторы LEGO<');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/elc-birthday-club-terms"]');
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>Правила и Условия Клуба');
@@ -60,14 +60,14 @@ Scenario('test links', (I) => {
           I.retry({ retries: 5, minTimeout: 1000 }).see('Отследить статус вашего заказа');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/partnership"]');
           I.retry({ retries: 5, minTimeout: 1000 }).see('Зарабатывайте вместе с партнерской программой ELC');
-          I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/blog/discont5"]');
-          I.retry({ retries: 5, minTimeout: 1000 }).see('Нашли в другом магазине товар дешевле?');
+/*          I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/blog/discont5"]');
+          I.retry({ retries: 5, minTimeout: 1000 }).see('Нашли в другом магазине товар дешевле?');*/
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/about-us"]');
           I.retry({ retries: 5, minTimeout: 1000 }).see('О компании ELC');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/careers"]');
           I.retry({ retries: 5, minTimeout: 1000 }).see('Сделай карьеру в ELC');
-          I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/corporate_clients"]');
-          I.retry({ retries: 5, minTimeout: 1000 }).see('Информация для корпоративных и оптовых покупателей');
+/*          I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/corporate_clients"]');
+          I.retry({ retries: 5, minTimeout: 1000 }).see('Информация для корпоративных и оптовых покупателей');*/
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/pcorp"]');
           I.retry({ retries: 5, minTimeout: 1000 }).see('Противодействие коррупции');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/articles"]');
@@ -132,6 +132,32 @@ Scenario('test login', (I) => {
   I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYIc');
   I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
   I.retry({ retries: 3, minTimeout: 1000 }).see('Мой аккаунт');
+});
+
+Scenario('test registration', (I) => {
+  I.amOnPage('https://www.elc-russia.ru/customer/account/login/');
+  //pause();
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="agreement"]');
+  I.wait(2);
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Это поле обязательно для заполнения');
+  I.fillField('//*[@id="firstname"]', 'Test');
+  I.fillField('//*[@id="lastname"]', 'Account');
+  I.fillField('//*[@id="email_address"]', 'tolik_kosmail.ru');
+  I.fillField('//*[@id="password"]', 'f');
+  I.fillField('//*[@id="confirmation"]', 'fe');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Please');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста, введите');
+});
+
+Scenario('test search', (I) => {
+  I.amOnPage('https://www.elc-russia.ru/');
+  //pause();
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="search"]', 'lego');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="search_mini_form"]/div/button');
+  I.retry({ retries: 10, minTimeout: 1000 }).see("Результаты поиска для 'lego'");
 });
 
 /*Scenario('test registration', (I) => {

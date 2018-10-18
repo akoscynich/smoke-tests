@@ -1,6 +1,101 @@
 
 Feature('ELC', {retries: 1});
 
+
+
+/*Scenario('test login', (I) => {
+  I.amOnPage('https://www.elc-russia.ru/');
+  //pause();
+  I.retry({ retries: 5, minTimeout: 1000 }).click('//*[@id="top-links3"]/noindex/ul/li[1]/a');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="modal_auth"]/div/div[2]/div[2]/div/form/div[4]/div[1]/button');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Я ваш постоянный покупатель');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Это поле обязательно для заполнения.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kosmail.ru');
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0Z');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Пожалуйста, введите правильный адрес электронной почты. Например johndoe@domain.com.');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Please enter 6 or more characters without leading or trailing spaces.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYI');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  //I.retry({ retries: 3, minTimeout: 1000 }).see('Неправильный логин или пароль.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYIc');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Мой аккаунт');
+});*/
+
+Scenario('test login', (I) => {
+  I.amOnPage('https://www.elc-russia.ru/customer/account/login/');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Это поле обязательно для заполнения.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kosmail.ru');
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0Z');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Пожалуйста, введите правильный адрес электронной почты. Например johndoe@domain.com.');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Please enter 6 or more characters without leading or trailing spaces.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
+  I.wait(1);
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYI');
+  I.wait(1);
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.wait(1);
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Неправильный логин или пароль.');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
+  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYIc');
+  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
+  I.retry({ retries: 3, minTimeout: 1000 }).see('Мой аккаунт');
+});
+
+Scenario('test order', (I) => {
+  I.amOnPage('https://www.elc-russia.ru/konstruktory/konstruktory-lego.html');
+  /*I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="categoryProducts"]/div[1]/div[1]/div[4]');
+  I.wait(2);
+  I.amOnPage('https://www.elc-russia.ru/checkout/cart/index/');
+  I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="https://www.elc-russia.ru/checkout/onepage/"]');
+  I.retry({ retries: 5, minTimeout: 1000 }).click('//*[@id="checkout-billing-form"]/a');
+  I.retry({ retries: 5, minTimeout: 1000 }).see('не заполнено');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[1]/div/input', '123')
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[2]/div/input', '123')
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[3]/div/input', '123')
+  I.retry({ retries: 5, minTimeout: 1000 }).see('неверный номер телефона');
+  I.retry({ retries: 5, minTimeout: 1000 }).see('неверная почта');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[2]/div/input', '1239999999');
+  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[3]/div/input', '123@123.ru');
+  I.retry({ retries: 5, minTimeout: 1000 }).click('//*[@id="checkout-billing-form"]/a');
+  I.retry({ retries: 5, minTimeout: 1000 }).see('Курьер')*/
+});
+
+Scenario('test registration', (I) => {
+  I.amOnPage('https://www.elc-russia.ru/customer/account/login/');
+  //pause();
+  I.wait(2);
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="agreement"]');
+  I.wait(2);
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Это поле обязательно для заполнения');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="firstname"]', 'Test');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="lastname"]', 'Account');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="email_address"]', 'tolik_kosmail.ru');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="password"]', 'f');
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="confirmation"]', 'fe');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Please');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста');
+  I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста, введите');
+});
+
+
+
+Scenario('test search', (I) => {
+  I.amOnPage('https://www.elc-russia.ru/');
+  //pause();
+  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="search"]', 'lego');
+  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="search_mini_form"]/div/button');
+  I.retry({ retries: 10, minTimeout: 1000 }).see("Результаты поиска для 'lego'");
+});
+
 Scenario('test links', (I) => {
   I.amOnPage('https://www.elc-russia.ru/');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/elcru_toy_brand"]');
@@ -77,91 +172,4 @@ Scenario('test links', (I) => {
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>ELC - блог для развития вашего ребёнка<');
           I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="/contacts/"]');
           I.retry({ retries: 5, minTimeout: 1000 }).seeInSource('>Интернет-магазин развивающих игрушек<');
-});
-
-/*Scenario('test login', (I) => {
-  I.amOnPage('https://www.elc-russia.ru/');
-  //pause();
-  I.retry({ retries: 5, minTimeout: 1000 }).click('//*[@id="top-links3"]/noindex/ul/li[1]/a');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="modal_auth"]/div/div[2]/div[2]/div/form/div[4]/div[1]/button');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Я ваш постоянный покупатель');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Это поле обязательно для заполнения.');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kosmail.ru');
-  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0Z');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Пожалуйста, введите правильный адрес электронной почты. Например johndoe@domain.com.');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Please enter 6 or more characters without leading or trailing spaces.');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
-  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYI');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
-  //I.retry({ retries: 3, minTimeout: 1000 }).see('Неправильный логин или пароль.');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
-  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYIc');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Мой аккаунт');
-});*/
-
-Scenario('test login', (I) => {
-  I.amOnPage('https://www.elc-russia.ru/customer/account/login/');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Это поле обязательно для заполнения.');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kosmail.ru');
-  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0Z');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Пожалуйста, введите правильный адрес электронной почты. Например johndoe@domain.com.');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Please enter 6 or more characters without leading or trailing spaces.');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
-  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYI');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Неправильный логин или пароль.');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="email"]', 'tolik_kos@mail.ru');
-  I.retry({ retries: 3, minTimeout: 1000 }).fillField('//*[@id="pass"]', 'feq0ZYIc');
-  I.retry({ retries: 3, minTimeout: 1000 }).click('//*[@id="send2"]');
-  I.retry({ retries: 3, minTimeout: 1000 }).see('Мой аккаунт');
-});
-
-Scenario('test order', (I) => {
-  I.amOnPage('https://www.elc-russia.ru/konstruktory/konstruktory-lego.html');
-  /*I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="categoryProducts"]/div[1]/div[1]/div[4]');
-  I.wait(2);
-  I.amOnPage('https://www.elc-russia.ru/checkout/cart/index/');
-  I.retry({ retries: 5, minTimeout: 1000 }).click('a[href="https://www.elc-russia.ru/checkout/onepage/"]');
-  I.retry({ retries: 5, minTimeout: 1000 }).click('//*[@id="checkout-billing-form"]/a');
-  I.retry({ retries: 5, minTimeout: 1000 }).see('не заполнено');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[1]/div/input', '123')
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[2]/div/input', '123')
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[3]/div/input', '123')
-  I.retry({ retries: 5, minTimeout: 1000 }).see('неверный номер телефона');
-  I.retry({ retries: 5, minTimeout: 1000 }).see('неверная почта');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[2]/div/input', '1239999999');
-  I.retry({ retries: 5, minTimeout: 1000 }).fillField('//*[@id="checkout-billing-form"]/div/div[3]/div/input', '123@123.ru');
-  I.retry({ retries: 5, minTimeout: 1000 }).click('//*[@id="checkout-billing-form"]/a');
-  I.retry({ retries: 5, minTimeout: 1000 }).see('Курьер')*/
-});
-
-Scenario('test registration', (I) => {
-  I.amOnPage('https://www.elc-russia.ru/customer/account/login/');
-  //pause();
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="agreement"]');
-  I.wait(2);
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Это поле обязательно для заполнения');
-  I.fillField('//*[@id="firstname"]', 'Test');
-  I.fillField('//*[@id="lastname"]', 'Account');
-  I.fillField('//*[@id="email_address"]', 'tolik_kosmail.ru');
-  I.fillField('//*[@id="password"]', 'f');
-  I.fillField('//*[@id="confirmation"]', 'fe');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="form-validate"]/div[2]/input');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Please');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Пожалуйста, введите');
-});
-
-Scenario('test search', (I) => {
-  I.amOnPage('https://www.elc-russia.ru/');
-  //pause();
-  I.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id="search"]', 'lego');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="search_mini_form"]/div/button');
-  I.retry({ retries: 10, minTimeout: 1000 }).see("Результаты поиска для 'lego'");
 });

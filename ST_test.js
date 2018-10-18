@@ -7,7 +7,7 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).click('/html/body/div[1]/header/div[2]/div/div[2]/div/div');
   I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="ma-mobilemenu"]/li[1]/a/span');
-  I.retry({ retries: 10, minTimeout: 1000 }).seeInSource('data-ui-id="page-title-wrapper">Уход для тела');
+  I.retry({ retries: 10, minTimeout: 1000 }).seeInSource('data-ui-id="page-title-wrapper">УХОД ДЛЯ ТЕЛА');
   I.retry({ retries: 10, minTimeout: 1000 }).click('/html/body/div[1]/header/div[2]/div/div[2]/div/div');
   I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="ma-mobilemenu"]/li[2]/a/span');

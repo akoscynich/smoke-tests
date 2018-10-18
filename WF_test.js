@@ -1,5 +1,5 @@
 
-Feature('WF', /*{retries: 2}*/);
+Feature('WF', {retries: 2});
 
 Scenario('test links', (I) => {
   I.amOnPage('https://ru.wileyfox.com/');
@@ -7,8 +7,11 @@ Scenario('test links', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu_mobile"]');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu_sm"]/li[2]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('СЛУЖБА ПОДДЕРЖКИ');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu_mobile"]');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu_sm"]/li[3]/a');
+  I.wait(1);
   I.retry({ retries: 10, minTimeout: 1000 }).see('ЧТО НАХОДИТСЯ');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu_mobile"]');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu_sm"]/li[4]/a');

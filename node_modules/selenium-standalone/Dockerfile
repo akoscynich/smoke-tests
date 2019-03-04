@@ -1,8 +1,9 @@
-FROM ubuntu:latest@sha256:e7def0d56013d50204d73bb588d99e0baa7d69ea1bc1157549b898eb67287612
+FROM ubuntu:latest@sha256:6d0e0c26489e33f5a6f0020edface2727db9489744ecc9b4f50c7fa671f23c49
 
 ENV NODE_VERSION 8.11.2
 
-LABEL maintainer="Vincent Voyer <vincent@zeroload.net>"
+LABEL author="Vincent Voyer <vincent@zeroload.net>"
+LABEL maintainer="Serban Ghita <serbanghita@gmail.com>"
 
 ENV LC_ALL=C
 ENV DEBIAN_FRONTEND=noninteractive

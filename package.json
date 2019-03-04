@@ -10,13 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "appium": "^1.9.0",
-    "codeceptjs": "^1.3.3",
-    "mochawesome-report-generator": "^3.1.3",
-    "selenium-standalone": "^6.15.2"
+    "appium": "^1.11.1",
+    "codeceptjs": "^1.4.6",
+    "mochawesome-report-generator": "^3.1.5",
+    "selenium-standalone": "^6.15.6"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
-    "mochawesome": "^3.0.3"
+    "mochawesome": "^3.1.1"
   }
 }

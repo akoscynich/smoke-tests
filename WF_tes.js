@@ -1,7 +1,7 @@
 
 Feature('WF', {retries: 2});
 
-Scenario('test links', (I) => {
+Scenario('test links', (I) => {/*
   I.amOnPage('https://ru.wileyfox.com/');
   I.retry({ retries: 10, minTimeout: 1000 }).see('ПАРТНЁРЫ');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="menu_mobile"]');
@@ -52,5 +52,5 @@ I.saveScreenshot('WF_contacts.png');
 I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_contacts.png');
 I.amOnPage('https://ru.wileyfox.com/products/swift/');
 I.saveScreenshot('WF_catalog.png');
-I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_catalog.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/WF_catalog.png');*/
 });

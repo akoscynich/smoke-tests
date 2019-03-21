@@ -1,7 +1,7 @@
 
 Feature('ST', {retries: 2});
 
-Scenario('test links', (I) => {
+Scenario('test links', (I) => {/*
   I.amOnPage('https://freshub.ru');
   I.retry({ retries: 10, minTimeout: 1000 }).see('ЗВОНОК БЕСПЛАТНЫЙ');
   I.retry({ retries: 10, minTimeout: 1000 }).click('/html/body/div[1]/header/div[2]/div/div[2]/div/div');
@@ -102,5 +102,5 @@ Scenario('screenshots', (I) => {
   I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/ST_franchising.png');
   I.amOnPage('https://freshub.ru/contact/franchising/optovie-prodazi/');
   I.saveScreenshot('ST_optovie-prodazi.png');
-  I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/ST_optovie-prodazi.png');
+  I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/ST_optovie-prodazi.png');*/
 });

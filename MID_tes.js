@@ -1,7 +1,7 @@
 
 Feature('MID');
 
-Scenario('test compare', (I) => {
+Scenario('test compare', (I) => {/*
   I.amOnPage('https://mideastore.ru');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Войти');
   I.retry({ retries: 10, minTimeout: 1000 }).click('div.place-menu-mobile.menu-mobile > span');
@@ -192,5 +192,5 @@ I.saveScreenshot('MID_dogovor.png');
 I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/MID_dogovor.png');
 I.amOnPage('https://www.mideastore.ru/vstraivaemaja-bytovaja-tehnika.html');
 I.saveScreenshot('MID_cataog.png');
-I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/MID_cataog.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/MID_cataog.png');*/
 });

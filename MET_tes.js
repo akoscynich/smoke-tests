@@ -2,7 +2,7 @@
 Feature('MET', /*{retries: 2}*/);
 
 Scenario('test links', (I) => {
-  I.amOnPage('https://metpromko.ru/');
+  /*I.amOnPage('https://metpromko.ru/');
   I.click('//*[@id="cities-popup"]/div/div/span');
   I.see('Оформить заказ');
   I.amOnPage('https://metpromko.ru/onepagecheckout/');
@@ -97,5 +97,5 @@ Scenario('test login', (I) => {
       I.amOnPage('https://metpromko.ru/metalloprokat');
       I.wait(4);
       I.saveScreenshot('MET_catalog.png');
-      I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/MET_catalog.png');
+      I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/MET_catalog.png');*/
 });

@@ -2,7 +2,7 @@
 Feature('NN', /*{retries: 2}*/);
 
 Scenario('test order DISABLED', (I) => {
-  /*I.amOnPage('https://www.nespresso.com/ru/ru/');
+  I.amOnPage('https://www.nespresso.com/ru/ru/');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Кофе-капсулы');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="header-nav-mobile"]/div[1]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Всего');
@@ -28,5 +28,5 @@ Scenario('test order DISABLED', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="top"]/body/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li[2]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="top"]/body/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li[2]/button');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Я НОВЫЙ КЛИЕНТ');
-*/
+
 });

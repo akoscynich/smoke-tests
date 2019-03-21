@@ -3,7 +3,7 @@
 Feature('ELC', /*{retries: 3}*/);
 
 Scenario('test links', (I) => {
-  I.amOnPage('https://www.elc-russia.ru/');
+  /*I.amOnPage('https://www.elc-russia.ru/');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="page"]/div/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Бренды');
   I.see('Вступить в клуб');
@@ -151,5 +151,5 @@ I.saveScreenshot('ELC_contacts.png');
 I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/ELC_contacts.png');
 I.amOnPage('https://www.elc-russia.ru/konstruktory.html');
 I.saveScreenshot('ELC_cataog.png');
-I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/ELC_cataog.png');
+I.addMochawesomeContext('/Users/hamster/codecept/mochawesome-report/ELC_cataog.png');*/
 });

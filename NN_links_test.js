@@ -1,7 +1,8 @@
+
 Feature('NN', /*{retries: 2}*/);
 
 Scenario('test links DISABLED', (I) => {
-  /*I.amOnPage('https://www.nespresso.com/ru/ru/');
+  I.amOnPage('https://www.nespresso.com/ru/ru/');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Кофе-капсулы');
   I.click('//*[@id="header-nav-mobile"]/div[1]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('Всего');
@@ -30,14 +31,5 @@ Scenario('test links DISABLED', (I) => {
   I.retry({ retries: 10, minTimeout: 1000 }).see('УСЛОВИЯ');
   I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="top"]/body/div[2]/div/div[3]/div/div[1]/div/ul/ul/li[5]/a');
   I.retry({ retries: 10, minTimeout: 1000 }).see('ПРАВИЛА');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="header"]/div/div[3]/div/div[2]');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Мой личный кабинет');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="header-account"]/div/ul/li[1]/a');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Войти или зарегистрироваться');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="header"]/div/div[3]/div/div[2]');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Мой личный кабинет');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="header-account"]/div/ul/li[2]/a');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Регистрация');
-  I.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id="header"]/div/div[3]/div/div[1]');
-  I.retry({ retries: 10, minTimeout: 1000 }).see('Добавленный');*/
+
 });

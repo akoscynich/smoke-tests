@@ -1,0 +1,352 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2019-03-04T13:59:03.338Z",
+    "end": "2019-03-04T14:02:32.017Z",
+    "duration": 208679,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "0a1b527c-061d-4acf-a080-dec215cf3cf9",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "f0b31420-87e9-4eb5-bbf7-95fdaa0932f0",
+        "title": "NN",
+        "fullFile": "/Users/hamster/codecept/NN_links_test.js",
+        "file": "/NN_links_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "NN \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "1bde8f28-6dd8-43ca-81ce-09efd5b38ee8",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "NN \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 7335,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e8d52dd6-8855-40a1-aa97-aefce5dbe327",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "NN \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "1517e986-ce1d-41f2-bcb4-c42e1a685001",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: finalize codeceptjs",
+            "fullTitle": "NN \"after each\" hook: finalize codeceptjs",
+            "timedOut": false,
+            "duration": 1044,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3c3caf17-8d60-4248-8fc4-230a79f0a3a7",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "test links DISABLED",
+            "fullTitle": "NN: test links DISABLED",
+            "timedOut": false,
+            "duration": 14001,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "context": "\"test_links_DISABLED.failed.png\"",
+            "code": "I.amOnPage('https://www.nespresso.com/ru/ru/');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Кофе-капсулы');\nI.click('//*[@id=\"header-nav-mobile\"]/div[1]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Всего');\nI.click('//*[@id=\"header-nav-mobile\"]/div[2]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Кофемашина');\nI.click('//*[@id=\"header-nav-mobile\"]/div[3]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Набор');\nI.click('//*[@id=\"header\"]/div/div[1]/em');\nI.click('//*[@id=\"nav\"]/ol/li[4]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('ПОСТОЯНСТВО КАЧЕСТВА');\nI.click('//*[@id=\"nav\"]/ol/li[5]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Что Nespresso может сделать для Вас?');\nI.click('//*[@id=\"header\"]/div/div[1]/em');\nI.click('//*[@id=\"nav\"]/ol/li[6]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Бутик');\nI.amOnPage('https://www.nespresso.com/ru/ru/');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"header\"]/div/div[1]/em');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"nav\"]/ol/li[7]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Исключительные');\nI.click('//*[@id=\"top\"]/body/div[2]/div/div[3]/div/div[1]/div/ul/ul/li[1]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"top\"]/body/div[2]/div/div[3]/div/div[1]/div/ul/ul/li[2]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Свяжитесь');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"top\"]/body/div[2]/div/div[3]/div/div[1]/div/ul/ul/li[3]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Курьерская');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"top\"]/body/div[2]/div/div[3]/div/div[1]/div/ul/ul/li[4]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('УСЛОВИЯ');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"top\"]/body/div[2]/div/div[3]/div/div[1]/div/ul/ul/li[5]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('ПРАВИЛА');",
+            "err": {
+              "message": "Error: Clickable element //*[@id=\"header\"]/div/div[1]/em was not found by text|CSS|XPath",
+              "estack": "Clickable element //*[@id=\"header\"]/div/div[1]/em was not found by text|CSS|XPath\n\nScenario Steps:\n\n- I.click(\"//*[@id=\"header\"]/div/div[1]/em\") at Test.Scenario (NN_links_test.js:13:5)\n- I.see(\"Набор\") at Test.Scenario (NN_links_test.js:12:46)\n- I.click(\"//*[@id=\"header-nav-mobile\"]/div[3]/a\") at Test.Scenario (NN_links_test.js:11:5)\n- I.see(\"Кофемашина\") at Test.Scenario (NN_links_test.js:10:46)\n- I.click(\"//*[@id=\"header-nav-mobile\"]/div[2]/a\") at Test.Scenario (NN_links_test.js:9:5)\n- I.see(\"Всего\") at Test.Scenario (NN_links_test.js:8:46)\n- I.click(\"//*[@id=\"header-nav-mobile\"]/div[1]/a\") at Test.Scenario (NN_links_test.js:7:5)\n- I.see(\"Кофе-капсулы\") at Test.Scenario (NN_links_test.js:6:46)\n- I.amOnPage(\"https://www.nespresso.com/ru/ru/\") at Test.Scenario (NN_links_test.js:5:5)\n\n"
+            },
+            "isRoot": false,
+            "uuid": "e106e2b8-570d-4fa1-8cb1-2452c0c3685f",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "e106e2b8-570d-4fa1-8cb1-2452c0c3685f"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 14001,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      },
+      {
+        "uuid": "a428a607-9763-49a5-b02e-04fa736bdc10",
+        "title": "NN",
+        "fullFile": "/Users/hamster/codecept/NN_login_test.js",
+        "file": "/NN_login_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "NN \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "26c88562-1358-4af5-b6ec-8afb762ceb52",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "NN \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 6185,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ca8e54fb-3ef9-4ad8-b0c7-0b691fd84151",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "NN \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "91b97152-ec8c-4d8d-9462-1fe783d066b8",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: finalize codeceptjs",
+            "fullTitle": "NN \"after each\" hook: finalize codeceptjs",
+            "timedOut": false,
+            "duration": 1045,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a4068d83-57db-4cda-8433-5cfe5e0900bd",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "test login DISABLED",
+            "fullTitle": "NN: test login DISABLED",
+            "timedOut": false,
+            "duration": 80042,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "context": "\"test_login_DISABLED.failed.png\"",
+            "code": "I.amOnPage('https://www.nespresso.com/ru/ru/customer/account/login/');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Кофе-капсулы');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"send2\"]');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Это обязательное поле');\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"email\"]', 'tolik_kos@mail.ru')\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"pass\"]', 'acid')\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"send2\"]');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Please enter 6 or more characters. Leading or trailing spaces will be ignored.');\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"email\"]', 'tolik_kos@mail.ru')\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"pass\"]', 'acid198')\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"send2\"]');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Введён некорректный логин или пароль.');\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"email\"]', 'tolik_kos@mail.ru')\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"pass\"]', 'acid1985')\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"send2\"]');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Панель управления');",
+            "err": {
+              "message": "Error: expected web page to include \"Это обязательное поле\"",
+              "estack": "expected web page to include \"Это обязательное поле\"\n\nScenario Steps:\n\n- I.see(\"Это обязательное поле\") at Test.Scenario (NN_login_test.js:8:46)\n- I.click(\"//*[@id=\"send2\"]\") at Test.Scenario (NN_login_test.js:7:46)\n- I.see(\"Кофе-капсулы\") at Test.Scenario (NN_login_test.js:6:46)\n- I.amOnPage(\"https://www.nespresso.com/ru/ru/customer/account/login/\") at Test.Scenario (NN_login_test.js:5:5)\n\n",
+              "diff": "- Your browser update limits cross-site tracking. Click any link to accept the use of Criteo’s technology or opt-out here. Criteo’s cross-site tracking technology ensures ad relevance. This message only appears once. Update your settings at any time.\n- Collapse\n- Кофе-капсулы\n- Кофемашины\n- Аксессуары\n- Войти или зарегистрироваться\n- Впервые на сайте?\n- Пройдите простую и удобную регистрацию!\n- Быстрое оформление заказа\n- Несколько адресов доставки\n- --( 19 lines more )---\n+ Это обязательное поле\n"
+            },
+            "isRoot": false,
+            "uuid": "65262438-06af-479c-a4c9-954133128ab6",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "65262438-06af-479c-a4c9-954133128ab6"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 80042,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      },
+      {
+        "uuid": "678858c9-7dae-4e2b-bf04-7d0889838066",
+        "title": "NN",
+        "fullFile": "/Users/hamster/codecept/NN_order_test.js",
+        "file": "/NN_order_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "NN \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "7ab9d2ad-0f2a-4073-8789-6757cb23442c",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "NN \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 5191,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ff33052a-84f9-4bb8-95ef-b552dcb4c101",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "NN \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e11bebca-6d1d-4318-b7df-48d79f515270",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: finalize codeceptjs",
+            "fullTitle": "NN \"after each\" hook: finalize codeceptjs",
+            "timedOut": false,
+            "duration": 1053,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "58103a7d-f9af-426a-930a-a49c190abc87",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "test order DISABLED",
+            "fullTitle": "NN: test order DISABLED",
+            "timedOut": false,
+            "duration": 92774,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "context": "\"test_order_DISABLED.failed.png\"",
+            "code": "I.amOnPage('https://www.nespresso.com/ru/ru/');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Кофе-капсулы');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"header-nav-mobile\"]/div[1]/a');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Всего');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"add-to-cart-782\"]/div/div/button/i[2]');\nI.wait(1);\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"add-to-cart-782\"]/div/div/div/div[1]/table/tbody/tr[2]/td[5]');\nI.wait(5);\nI.amOnPage('https://www.nespresso.com/ru/ru/checkout/cart/');\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/input', '1')\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/button');\nI.retry({ retries: 10, minTimeout: 1000 }).see('The minimum quantity allowed for purchase is 10.');\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/input', '99999')\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/button');\nI.retry({ retries: 10, minTimeout: 1000 }).see('The maximum quantity allowed for purchase is 1500.');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Некоторые товары не могут быть заказаны в указанном количестве.');\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/input', '10')\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/button');\nI.wait(5);\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"top\"]/body/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li[2]/button');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Количество капсул в заказе должно быть кратно 50');\nI.retry({ retries: 10, minTimeout: 1000 }).fillField('//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/input', '100')\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/button');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"top\"]/body/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li[2]/button');\nI.retry({ retries: 10, minTimeout: 1000 }).click('//*[@id=\"top\"]/body/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li[2]/button');\nI.retry({ retries: 10, minTimeout: 1000 }).see('Я НОВЫЙ КЛИЕНТ');",
+            "err": {
+              "message": "Error: expected web page to include \"The minimum quantity allowed for purchase is 10.\"",
+              "estack": "expected web page to include \"The minimum quantity allowed for purchase is 10.\"\n\nScenario Steps:\n\n- I.see(\"The minimum quantity allowed for purchase is 10.\") at Test.Scenario (NN_order_test.js:16:46)\n- I.click(\"//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/button\") at Test.Scenario (NN_order_test.js:15:46)\n- I.fillField(\"//*[@id=\"shopping-cart-table\"]/tbody/tr[3]/td[4]/input\", \"1\") at Test.Scenario (NN_order_test.js:14:46)\n- I.amOnPage(\"https://www.nespresso.com/ru/ru/checkout/cart/\") at Test.Scenario (NN_order_test.js:13:5)\n- I.wait(5) at Test.Scenario (NN_order_test.js:12:5)\n- I.click(\"//*[@id=\"add-to-cart-782\"]/div/div/div/div[1]/table/tbody/tr[2]/td[5]\") at Test.Scenario (NN_order_test.js:11:46)\n- I.wait(1) at Test.Scenario (NN_order_test.js:10:5)\n- I.click(\"//*[@id=\"add-to-cart-782\"]/div/div/button/i[2]\") at Test.Scenario (NN_order_test.js:9:46)\n- I.see(\"Всего\") at Test.Scenario (NN_order_test.js:8:46)\n- I.click(\"//*[@id=\"header-nav-mobile\"]/div[1]/a\") at Test.Scenario (NN_order_test.js:7:46)\n- I.see(\"Кофе-капсулы\") at Test.Scenario (NN_order_test.js:6:46)\n- I.amOnPage(\"https://www.nespresso.com/ru/ru/\") at Test.Scenario (NN_order_test.js:5:5)\n\n",
+              "diff": "- Thanks for choosing to enable Criteo services. If you change your mind, adjust your settings at https://privacy.criteo.com/#/cookiecontrol.\n- 1\n- Кофе-капсулы\n- Кофемашины\n- Аксессуары\n- Корзина\n- Некоторые товары не могут быть заказаны в указанном количестве.\n- Обращаем ваше внимание, что выгода по нескольким акциям не суммируется.\n- Кофе-капсулы (1)\n- удалить пункт\n- --( 21 lines more )---\n+ The minimum quantity allowed for purchase is 10.\n"
+            },
+            "isRoot": false,
+            "uuid": "5aff092a-9c52-4fc1-ac39-a3d8b53351cc",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "5aff092a-9c52-4fc1-ac39-a3d8b53351cc"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 92774,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 0
+  },
+  "copyrightYear": 2019
+}
